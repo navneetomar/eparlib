@@ -1,0 +1,11 @@
+<!-- <select class="form-select custom-select dropdown-theme colour-switcher" id="themeSelect" (change)="switchTheme($event.target.value)">
+  <option value="light-theme"><i class="fas fa-sun"></i>&nbsp;Light</option>
+  <option value="dark-theme"><i class="fas fa-moon"></i>&nbsp;Dark</option>
+</select> -->
+<button id="btnDark" class="btn-dark" (click)="switchTheme('dark')">
+    <i class="fas fa-moon"></i>
+</button>
+<button id="btnLight" (click)="switchTheme('light')" class="btn-light">
+    <i class="fas fa-sun"></i>
+</button>
+

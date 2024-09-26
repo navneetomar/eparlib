@@ -1,0 +1,29 @@
+:host {
+  #main-site-header {
+    min-height: var(--ds-header-height);
+
+    @include media-breakpoint-up(md) {
+      height: var(--ds-header-height);
+    }
+
+    // background-color: var(--ds-header-bg);
+    background-color: #008080 !important;
+
+    &-container {
+      min-height: var(--ds-header-height);
+    }
+  }
+
+  img#header-logo {
+    height: var(--ds-header-logo-height);
+  }
+
+  button#navbar-toggler {
+    color: var(--ds-header-icon-color);
+
+    &:hover, &:focus {
+      color: var(--ds-header-icon-color-hover);
+    }
+  }
+
+}

@@ -12,29 +12,23 @@ export class ColourSwitcherComponent {
 
   currentTheme: string = 'light';  // Default theme
 
-  constructor() { }
+  constructor() { 
+    let theme = localStorage.getItem('theme') || 'light';
+    let font = localStorage.getItem('font') || 'medium';
+    let themefile = `${theme}-${font}`;
+    this.loadTheme(themefile);
+    this.currentTheme = theme;
+    localStorage.setItem('theme', theme);
+    localStorage.setItem('font', font);
+  }
 
   switchTheme(theme: string) {
-    this.removeExistingTheme();  // Remove any existing theme
-    let themefile = '';
-    let font = localStorage.getItem('font');
-    if(font != undefined)
-    {
-      themefile = `${theme}-${font}`;
-    } else {
-      themefile = `${theme}-medium`;
-    }
-    this.loadTheme(themefile);       // Load the new theme 
-    this.currentTheme = theme;   // Update the current theme
+    this.removeExistingTheme();
+    let font = localStorage.getItem('font') || 'medium';
+    let themefile = `${theme}-${font}`;
+    this.loadTheme(themefile);
+    this.currentTheme = theme;
     localStorage.setItem('theme', theme);
-    // if(theme=='light-theme'){
-    //   document.getElementById('btnLight').style.display="none";
-    //   document.getElementById('btnDark').style.display="block";
-    // }else{
-    //   document.getElementById('btnLight').style.display="block";
-    //   document.getElementById('btnDark').style.display="none";
-    // }
-    
   }
 
   loadTheme(theme: string) {

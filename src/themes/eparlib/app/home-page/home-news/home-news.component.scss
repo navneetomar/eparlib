@@ -16,9 +16,6 @@
       object-fit: cover;
       object-position: top;
     }
-    .purple{
-      background-color: purple;
-    }
 
     .box-section {
       border: #d9e3db 2px solid;
@@ -84,6 +81,61 @@
 
     @include hover {
       color: var(--ds-home-news-link-hover-color);
+    }
+  }
+
+  .custom-card{
+    background-color: #640371 !important;
+    max-height:150px !important;
+
+    h5{
+      font-size:2.0em;
+      font-family:"trebuchet MS";
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-bottom:10px;
+      text-align:center;
+      color:white;
+    }
+    .search_label
+    {
+      color:white;
+      float:left;
+      margin-left:15px;
+      font-size:17px;
+      font-weight: bold;
+      cursor:pointer;
+    }
+    .search_dropdown
+    {
+      height:35px;
+      margin:10px 0;
+      max-width:227px;
+    }
+
+    .search_hint
+    {
+      color: #fff;
+      font-size: 12px;
+    }
+    .search_pdf_link
+    {
+      position: absolute;
+      margin: 0px 0px;
+      height: 35px;
+      cursor: pointer;
+      background-color: #e6e6e6;
+      color: red;
+      border-radius: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .search_input
+    {
+    }
+    .search_go_btn
+    {
+      margin: 10px 0;
     }
   }
 }

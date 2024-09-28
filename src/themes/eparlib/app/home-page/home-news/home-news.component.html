@@ -5,25 +5,36 @@
       <p class="card-text" style="color: black; font-size: 16px;">Parliament Digital Library provides information about various parliamentary documents of Lok Sabha, the House of People. The debates of Lok Sabha, from the First Lok Sabha to the Seventeenth Lok Sabha are placed in this portal. The Reports of several Parliamentary Committees, Presidential Addresses to Parliament, Budget Speeches, and several publications of the Lok Sabha Secretariat are also part of its collections. The treasured and historic legislative debates, tracing the growth and development of modern parliamentary institutions in India, from 1854 to 1952, thereby covering the period of 99 years, have also been digitized. The portal provides the users a single window information retrieval technology with filtered and federated search from multiple searchable resources.</p>
     </div>
   </div>
-  <div class="purple card mx-0 mt-4" style="height: 150px;">
+  <div class="card mx-0 mt-4 custom-card">
     <div class="card-body">
       <h5 class="card-title text-center text-white" style="font-size: 2.0em;">SEARCH</h5>
       <div class="row">
-        <div class="col-md-4">
-          <label style="font-size: 13px; font-weight: bold; color: white;">How to find information:</label>
-          <select class="form-control" style="height: 35px;">
-            <option value="">Select Collection</option>
-            <option *ngFor="let collection of collections" [value]="collection.id">
-              {{ collection.name }}
-            </option>
-          </select>
+        <div class="col-md-3">
+          <div><label class="search_label" for="search_dropdown">How to find information:</label></div>
+          <div>
+            <select class="form-control search_dropdown">
+              <option value="">Select Collection</option>
+              <option *ngFor="let collection of collections" [value]="collection.id">
+                {{ collection.name }}
+              </option>
+            </select>
+          </div>
         </div>
-        <div class="col-md-8">
-            <div>
-              <label class="text-smaller" style="font-size: 12px; color: white;">Type your keyword in box below, you can filter your query in advance search for precise result.</label>
+        <div class="col-md-7">
+            <div><label class="search_hint" for>Type your keyword in box below, you can filter your query in advance search for precise result.</label></div>
+            <!-- <div class="search_pdf_link">
+              <a button="" class="btn btn-warning1 search-box1" data-toggle="tooltip" data-placement="right" title="Help for search" onclick="createPopupWin('/help/Searchhelp.pdf','popup',1200, 700); return false;">?</a>
             </div>
-            <input type="text" class="form-control" placeholder="Search..." style="height: 35px;">
-            <button class="btn ml-2" style="background-color: yellow; color: white;">Go!</button>
+            <div><input type="text" class="form-control search_input" placeholder="Search..."></div> -->
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text" onclick="createPopupWin('/help/Searchhelp.pdf','popup',1200, 700);">&#64;</div>
+              </div>
+              <input type="text" class="form-control search_input" placeholder="Search...">
+            </div>
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-warning search_go_btn">Go!</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,44 @@
+body
+{
+    background-color: white !important;
+    color: black !important;
+}
+
+.topbar
+{
+    background-color: #DE5431 !important;
+    color:black !important;
+}
+
+.topbar-date
+{
+    color: white !important;
+}
+
+.topbar-time
+{
+    color: white !important;
+}
+
+.topbar-li:not(:last-child) 
+{ 
+    border-right: 1px solid white !important;
+}
+
+.btn-light i
+{
+    color: white;
+}
+.btn-dark i
+{
+    color: white;
+}
+
+.font-xtra-small, .font-small, .font-medium, .font-large, .font-xtra-large
+{
+    color:white;
+}
+
+.card-text{
+    font-size:12px !important;
+}

@@ -1,0 +1,58 @@
+# Maven build directories
+/dspace/target/
+/dspace-api/target/
+/dspace-xmlui/target/
+/dspace-rest/target/
+/dspace-oai/target/
+/dspace-sword/target/
+/dspace-swordv2/target/
+/dspace-rdf/target/
+/dspace-services/target/
+/dspace-server/target/
+/dspace-spring-rest/target/
+/dspace-spring-rest/target/classes/
+
+# DSpace Angular UI build output and node modules
+/dspace-angular/node_modules/
+/dspace-angular/dist/
+
+# Log files
+/dspace/log/
+/dspace/solr/search/logs/
+/dspace/solr/statistics/logs/
+/dspace/solr/oai/logs/
+
+# Temporary files and directories
+/tmp/
+/logs/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# VS Code workspace settings
+.vscode/
+
+# Node.js dependencies
+/node_modules/
+
+# OS generated files (macOS)
+.DS_Store
+
+# Compiled class files
+*.class
+
+# Local configuration files (customize as necessary)
+/dspace/config/local.cfg
+/dspace/config/spring/api/
+/dspace/config/spring/rest/
+
+# Assetstore and upload directories (if these should not be versioned)
+/dspace/assetstore/
+/dspace/upload/
+
+# Angular cache files
+.angular/
+.angular/cache/
+
+# Any additional temporary

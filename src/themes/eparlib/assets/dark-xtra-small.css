@@ -1,0 +1,43 @@
+body
+{
+    background-color: black !important;
+    color: yellow;
+}
+.topbar
+{
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.topbar-date
+{
+    color: yellow !important;
+}
+
+.topbar-time
+{
+    color: yellow !important;
+}
+
+.topbar-li:not(:last-child) 
+{ 
+    border-right: 1px solid yellow !important;
+}
+
+.btn-light i
+{
+    color: yellow;
+}
+.btn-dark i
+{
+    color: yellow;
+}
+
+.font-xtra-small, .font-small, .font-medium, .font-large, .font-xtra-large
+{
+    color:yellow;
+}
+
+.card-text{
+    font-size:12px !important;
+}
